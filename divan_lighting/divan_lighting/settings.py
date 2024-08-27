@@ -1,4 +1,4 @@
-# Scrapy settings for divanpars project
+# Scrapy settings for divan_lighting project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "divanpars"
+BOT_NAME = "divan_lighting"
 
-SPIDER_MODULES = ["divanpars.spiders"]
-NEWSPIDER_MODULE = "divanpars.spiders"
+SPIDER_MODULES = ["divan_lighting.spiders"]
+NEWSPIDER_MODULE = "divan_lighting.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "divanpars (+http://www.yourdomain.com)"
+#USER_AGENT = "divan_lighting (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "divanpars.middlewares.DivanparsSpiderMiddleware": 543,
+#    "divan_lighting.middlewares.DivanLightingSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "divanpars.middlewares.DivanparsDownloaderMiddleware": 543,
+#    "divan_lighting.middlewares.DivanLightingDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "divanpars.pipelines.DivanparsPipeline": 300,
+#    "divan_lighting.pipelines.DivanLightingPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -91,3 +91,5 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+FEED_FORMAT = 'csv'
+FEED_URI = 'output.csv'

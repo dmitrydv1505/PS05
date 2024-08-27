@@ -6,7 +6,7 @@
 import scrapy
 
 
-class DivanparsItem(scrapy.Item):
+class DivanLightingItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
